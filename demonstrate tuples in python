@@ -1,0 +1,37 @@
+# Creating a tuple
+fruits_tuple = ("apple", "banana", "cherry", "date")
+
+# Accessing elements from the tuple
+print("First element in the tuple:", fruits_tuple[0])  # Accessing the first element
+print("Last element in the tuple:", fruits_tuple[-1])  # Accessing the last element
+
+# Slicing the tuple (Getting a range of elements)
+print("\nSliced tuple (from index 1 to 3):", fruits_tuple[1:4])
+
+# Concatenating tuples
+extra_fruits = ("elderberry", "fig")
+combined_fruits = fruits_tuple + extra_fruits
+print("\nCombined tuple:", combined_fruits)
+
+# Repeating a tuple
+repeated_fruits = fruits_tuple * 2
+print("\nRepeated tuple:", repeated_fruits)
+
+# Checking if an item exists in the tuple
+if "banana" in fruits_tuple:
+    print("\n'banana' is in the tuple.")
+else:
+    print("\n'banana' is not in the tuple.")
+
+# Getting the length of the tuple
+print("\nLength of the tuple:", len(fruits_tuple))
+
+# Iterating over the tuple
+print("\nLooping through the tuple:")
+for fruit in fruits_tuple:
+    print(fruit)
+
+# Using tuple unpacking
+x, y, z, w = fruits_tuple
+print("\nTuple unpacking:")
+print(f"x = {x}, y = {y}, z = {z}, w = {w}")
